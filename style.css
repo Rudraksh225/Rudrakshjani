@@ -19,6 +19,21 @@ html {
     margin-top: 9px;
 }
 
+.navbar img:hover{
+    /*animation: image 1s infinite;*/
+    transform: scale(1.30);
+    transition: 500ms;
+}
+
+/*@keyframes image{
+    0%{
+        transform: scale(1.30);    
+    }
+    50%{
+        transform: scale(1.30);
+    }
+}*/
+
 .navbar{
     display: flex;
     align-items: center;
@@ -74,17 +89,47 @@ nav ul li #resume{
     }
     100%{
         text-shadow: 5px 5px 4px rgba(27, 8, 136, 0.8);
-    }
+    }   
 }   
 
 .about{
     color: #fff;
-    margin-top:35%;
+    margin-top:30%;
 }
 
-.about p{
-    font-size: 140%;
-    margin-right: 40%;
-    margin-left: 22%;
-    margin-bottom: 20%;
+.about:hover{
+    background-image: url();
+}
+
+.about .name{
+    display: flex;
+    align-items: center;
+}
+
+.about .name img{
+    width: 3%;
+    height: 50%;
+    display: flex;
+    margin-left: 226px;
+}
+
+.about .name p{
+    margin-left: 62px;
+    font-size: 130%;
+}
+
+.about .college{
+    display: flex;
+    margin-top: 15px;
+}
+
+.about .college p{
+    margin-left: 48px;
+    font-size: 130%;
+}
+
+.about .college img{
+    width: 50px;
+    height: 54px;
+    margin-left: 226px;
 }
