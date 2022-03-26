@@ -1,3 +1,7 @@
+:root{
+    --font:'Pacifico', cursive;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,20 +23,11 @@ html {
     margin-top: 9px;
 }
 
-.navbar img:hover{
-    /*animation: image 1s infinite;*/
+.navbar img:hover{  
     transform: scale(1.30);
-    transition: 500ms;
+    transition: 300ms;
 }
 
-/*@keyframes image{
-    0%{
-        transform: scale(1.30);    
-    }
-    50%{
-        transform: scale(1.30);
-    }
-}*/
 
 .navbar{
     display: flex;
@@ -78,6 +73,7 @@ nav ul li #resume{
 
 .info:hover{
     animation: info 3s infinite; 
+    cursor: pointer;
 }
 
 @keyframes info{
@@ -116,6 +112,7 @@ nav ul li #resume{
 .about .name p{
     margin-left: 62px;
     font-size: 130%;
+    font-family:var(--font);
 }
 
 .about .college{
@@ -126,10 +123,81 @@ nav ul li #resume{
 .about .college p{
     margin-left: 48px;
     font-size: 130%;
+    font-family:var(--font);
 }
 
 .about .college img{
     width: 50px;
     height: 54px;
     margin-left: 226px;
+}
+
+.about .education{
+    display: flex;
+    margin-top: 15px;
+}
+
+.about .education p{
+    margin-left: 48px;
+    font-size: 130%;   
+    font-family:var(--font);
+}
+
+.about .education img{
+    width: 47px;
+    height: 47px;
+    margin-left: 226px;
+}
+
+.about .name img:hover, .about .college img:hover , .about .education img:hover{
+    transform: scale(1.15);
+    transition: 300ms;
+}
+
+.about #pinfo{
+    margin-top: 60px;
+    margin-right: 50%;
+    margin-left: 15%;
+    font-size: larger;
+    font-family: var(--font);
+}
+
+.skills{
+    margin-right: 51%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.skills h1{
+    color: #fff;
+    font-family: var(--font);
+}
+
+.skills .skill{
+    text-align: right;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(1, 0, 2, 0.8);
+    font-weight: 600;
+    font-size: small;
+    font-family: var(--font);
+    background-color: #76e776;
+    border-radius: 3px;
+}
+
+.skills p{
+    color: #fff;
+    font-family: var(--font);
+}
+
+.skills .c{
+    width: 80%;
+}
+
+.skills .html{
+    width: 95%;
+}
+
+.skills .java{
+    width: 50%;
 }
