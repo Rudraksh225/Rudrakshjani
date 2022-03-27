@@ -13,6 +13,10 @@ html {
 .navbar{
     height: 200px;
     width: 200px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 117px;
 }
 
 .navbar img{
@@ -25,15 +29,8 @@ html {
 
 .navbar img:hover{  
     transform: scale(1.30);
-    transition: 300ms;
-}
-
-
-.navbar{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 117px;
+    transition-timing-function: ease;
+    transition: 3s;
 }
 
 nav{
@@ -117,7 +114,7 @@ nav ul li #resume{
 
 .about .college{
     display: flex;
-    margin-top: 15px;
+    margin-top: 80px;
 }
 
 .about .college p{
@@ -134,7 +131,7 @@ nav ul li #resume{
 
 .about .education{
     display: flex;
-    margin-top: 15px;
+    margin-top: 80px;
 }
 
 .about .education p{
@@ -155,7 +152,7 @@ nav ul li #resume{
 }
 
 .about #pinfo{
-    margin-top: 60px;
+    margin-top: 15%;
     margin-right: 50%;
     margin-left: 15%;
     font-size: larger;
@@ -165,7 +162,7 @@ nav ul li #resume{
 .skills{
     margin-right: 51%;
     margin-left: 15%;
-    margin-top: 5%;
+    margin-top: 25%;
 }
 
 .skills h1{
@@ -200,4 +197,30 @@ nav ul li #resume{
 
 .skills .java{
     width: 50%;
+}
+
+.contact{
+    margin-top: 25%;
+    margin-bottom: 30%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 117px;
+}
+
+.contact h2{
+    margin-top: 20%;
+    margin-right: 50px;
+    color: #fff;
+    font-family: var(--font);
+    font-size: 250%;
+}
+
+.contact ul{
+    margin-top: 10%;
+}
+
+.contact ul li{
+    display: inline-block;
+    margin-right: 80px;
 }
